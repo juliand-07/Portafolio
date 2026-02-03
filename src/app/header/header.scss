@@ -1,8 +1,9 @@
 .header{
     display: flex;
-    background-color: #ffffff;
+    background-color: rgb(27, 38, 59);
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0px 0px 10px 0px rgb(27, 38, 59);
     container-type: inline-size;
     container-name: header;
     position: relative;
@@ -10,16 +11,13 @@
 }
 
 .header_open-nav-button{
-    color: rgb(13, 13, 14);
+    color: rgb(255, 255, 255);
     font-size: 3rem;
     font-weight: 600;
     position: absolute;
     right: 10px;
 }
 
-.header_open-nav-button:is(:hover,:active){
-    color: orange;
-}
 
 .header_checkbox{
     display: none;
@@ -27,7 +25,7 @@
 
 .header__nav{
     display: none;
-    background-color: #fff;
+    background-color: rgb(27, 38, 59);
     position: absolute;
     height: 100vh;
     width: 100%;
@@ -58,7 +56,7 @@
 }
 
 .header__nav-item a{
-    color: #48e;
+    color: rgb(246, 246, 246);
 }
 
 .header__nav-item a:not(:is(:hover,:active)){

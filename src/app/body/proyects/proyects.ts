@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { Deskary } from './deskary/deskary';
 
 @Component({
   selector: 'app-proyects',
-  imports: [],
+  imports: [Deskary],
   templateUrl: './proyects.html',
   styleUrl: './proyects.scss',
 })
