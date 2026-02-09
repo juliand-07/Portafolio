@@ -1,0 +1,73 @@
+@use "../slider" as *;
+/* ------ COMPONENT SECTION ------- */
+
+.spring {
+    margin-top: 50px;
+    width: 100%;
+    color: #fff;
+    background-color: rgb(13, 27, 45);
+    container-type: inline-size;
+    container-name: spring;
+    font-size: 20px;
+}
+
+.spring__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+// -------- DATA SECTION --------//
+.spring__data {
+    width: 100%;
+    max-width: 650px;
+    text-align: justify;
+    line-height: 1.6;
+    hyphens: auto;
+    margin: 2px;
+    overflow-wrap: break-word;
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+// ------ SECTION QUERY ------ //
+
+@container spring (min-width:900px) {
+    .spring__wrapper {
+        flex-direction: row;
+        padding: 20px;
+        height: 600px;
+    }
+
+    h2 {
+        margin-top: 1;
+        font-size: 2rem;
+        text-wrap: balance;
+    }
+
+    .spring__data {
+        border-radius: 0px 25px 25px 0px;
+    }
+
+    .spring__description {
+        max-width: 600px;
+    }
+
+    .spring__img-cont {
+       max-height: initial;
+        margin-top: 10px;
+        border-radius: 25px 0px 0px 25px;
+    }
+
+    .slider {
+        justify-content: center;
+        object-fit: cover;
+        min-width: 500px;
+        max-width: 1000px;
+    }
+}
