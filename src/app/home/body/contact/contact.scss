@@ -1,0 +1,91 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    min-height: 40vh;
+    padding: 4px;
+    container-type: inline-size;
+    container-name: contact;
+}
+
+.title__Contact {
+    padding: 0px 0px 5px 10px;
+    text-align: start;
+    font-size: 33px;
+    border-bottom: 2px solid black;
+    color: #000;
+}
+
+label {
+    margin-left: 6px;
+    font-size: 20px;
+}
+
+ .form__cont {
+        align-content: center;
+        padding: 10px;
+    }
+.form {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "name name"
+        "email email"
+        "contact contact"
+        "linkedin github";
+    padding: 15px;
+    max-width: 600px;
+    width: 100%;
+    background-color: rgba(13, 27, 45, 0.932);
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 0px #000;
+}
+
+
+
+.form__input-cont:nth-child(1) {
+    grid-area: name;
+}
+
+.form__input-cont:nth-child(2) {
+    grid-area: email;
+}
+
+.form__input-cont:nth-child(3) {
+    grid-area: contact;
+}
+
+.form__input-cont:nth-child(4) {
+    display: flex;
+    justify-content: center;
+    grid-area: linkedin;
+}
+
+.form__input-cont:nth-child(5) {
+    display: flex;
+    justify-content: center;
+    grid-area: github;
+}
+
+
+.form__input-cont input {
+    width: 90%;
+    border: 1px solid #fff;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 10px;
+}
+
+.img__cont {
+    display: flex;
+    justify-content: center;
+}
+
+.linkedin,.github {
+    width: 60px;
+    height: 60px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 50%;
+}
