@@ -78,6 +78,9 @@ label {
     margin: 10px 10px;
 }
 
+input::placeholder{
+    color: rgb(224, 225, 221);
+}
 .img__cont {
     display: flex;
     justify-content: center;

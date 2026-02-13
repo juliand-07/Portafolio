@@ -1,10 +1,7 @@
 <section class="proyects" id="proyects">
     <div class="proyects__wrapper">
         <h2>Proyectos</h2>
-        <div>
-            <button class="back" (click)="back()" *ngIf="visible==false">back</button>
-        </div>
-        <div class="proyects__proyects-container" *ngIf="visible">
+        <div class="proyects__proyects-container" >
             <div class="proyect__cont" (click)="deskary()">
                 <h3>DESKARY</h3>
             </div>
@@ -14,6 +11,9 @@
             <div class="proyect__cont" (click)="spring()">
                 <h3>SPRING-BOOT</h3>
             </div>
+        </div>
+        <div>
+            <button class="back" (click)="back()" *ngIf="visible==false">back</button>
         </div>
         <div>
             <router-outlet></router-outlet>

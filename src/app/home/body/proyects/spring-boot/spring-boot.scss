@@ -6,6 +6,7 @@
     width: 100%;
     color: #fff;
     background-color: rgb(13, 27, 45);
+    border-radius: 20px;
     container-type: inline-size;
     container-name: spring;
     font-size: 20px;
@@ -20,17 +21,19 @@
 }
 
 // -------- DATA SECTION --------//
-.spring__data {
+.spring_data{
+    // background-color: green;
     width: 100%;
-    max-width: 650px;
+    max-width: 950px;
     text-align: justify;
     line-height: 1.6;
-    hyphens: auto;
-    margin: 2px;
     overflow-wrap: break-word;
     padding: 10px;
 }
 
+.spring_description{
+    margin: 20px;
+}
 h2 {
     text-align: center;
 }

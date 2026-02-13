@@ -52,7 +52,7 @@
 .load-bar__bar{
     background-color: #48e;
     border-radius: 4px;
-    padding: 4px 6px;
+    padding: 4px 4px;
 }
 
 .bar--60{
@@ -89,13 +89,13 @@
     }
 
     .profile__img-cont{
-        max-height: initial;
-        border-radius: 25px  0px 0px  25px;
+        max-height: max-content;
     }
     .profile__img{
         height: 100%;
+        border-radius: 25px 0px 0px 25px;
         object-fit: cover;
-        width: 600px;
+        width: 550px;
         background-color: #fff;
     }
     
