@@ -1,0 +1,2 @@
+export default `*{box-sizing:border-box}body{margin:0;font-family:Verdana,Geneva,Tahoma,sans-serif;background-color:#e0e1dd;color:#fdfdfddd}body,div,ul,nav,header,footer,a,li,label{margin:0;padding:0}
+`;

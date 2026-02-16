@@ -1,0 +1,8 @@
+{
+  "routes": {
+    "/Portafolio/home": {},
+    "/Portafolio/home/deskary": {},
+    "/Portafolio/home/events": {},
+    "/Portafolio/home/spring": {}
+  }
+}
