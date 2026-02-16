@@ -70,17 +70,17 @@ h2 {
 }
 
 .proyect__cont:nth-child(1){
-    background-image: linear-gradient(#0007,#0006), url("/image/angular.jpg");
+    background-image: linear-gradient(#0007,#0006), url("image/angular.jpg");
     background-position: center;
     background-size: cover;
 }
 .proyect__cont:nth-child(2){
-    background-image: linear-gradient(#0006,#0005), url("/image/nestjs.jpg");
+    background-image: linear-gradient(#0006,#0005), url("image/nestjs.jpg");
     background-position: center;
     background-size: cover;
 }
 .proyect__cont:nth-child(3){
-    background-image: linear-gradient(#0006,#0005), url("/image/spring.jpg");
+    background-image: linear-gradient(#0006,#0005), url("image/spring.jpg");
     background-position: center;
     background-size: cover;
 }
