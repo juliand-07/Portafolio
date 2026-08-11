@@ -2,7 +2,7 @@
     margin: 0 auto;
     max-width: 550px;
     width: 100%;
-    text-align: center;    
+    text-align: center;
 }
 
 .slider input[type=radio] {
@@ -25,6 +25,7 @@
     width: 100%;
     overflow: hidden;
 }
+
 .slide1:checked~.slides .inner {
     transform: translateX(0%);
 }
@@ -68,15 +69,17 @@
 
 .slide {
     min-width: 100%;
-    height: 300px;
+    height: 360px;
 }
-.slide-content{
+
+.slide-content {
     height: 100%;
 }
+
 .controls {
-    margin: -130px 0 0;
+    margin: -150px 0 0;
     width: 100%;
-    height: 50px;
+    height: -10px;
     z-index: 3;
     position: relative;
 }
@@ -84,6 +87,7 @@
 .controls label {
     transition: opacity 0.2s ease-out;
     display: none;
+    // border-radius: 80%;
     width: 50px;
     height: 50px;
     opacity: 1;
@@ -98,12 +102,12 @@
 .slide7:checked~.controls label:nth-child(8),
 .slide8:checked~.controls label:nth-child(9),
 .slide9:checked~.controls label:nth-child(1) {
-    background-image: url("/image/arrownext.png");
+    background-image: url(https://img.icons8.com/stickers/100/forward--v1.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     float: right;
-    margin: 130px 0 0 -20px;
+    margin: 98px 0px 0px 0px;
     display: block;
 }
 
@@ -116,17 +120,17 @@
 .slide7:checked~.controls label:nth-child(6),
 .slide8:checked~.controls label:nth-child(7),
 .slide9:checked~.controls label:nth-child(8) {
-    background-image: url("/image/arrowbefore.png");
+    background-image: url(https://img.icons8.com/stickers/100/back.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     float: left;
-    margin: 130px 0 0 20px;
+    margin: 98px 0 15px 0px;
     display: block;
 }
 
 .bullets {
-    margin: 100px 100px 0;
+    margin:110px 50px 0;
     text-align: center;
 }
 
@@ -136,7 +140,7 @@
     height: 10px;
     border-radius: 100%;
     background: #ccc;
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
 .slide2:checked~.bullets label:nth-child(2),
@@ -152,7 +156,6 @@
 }
 
 .img {
-    height:  100%;
-    max-width:100%;
+    height: 80%;
     width: 100%;
 }

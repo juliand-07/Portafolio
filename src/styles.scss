@@ -4,13 +4,13 @@
 }
 body{
   margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif ;
-  background-color: rgb(224, 225, 221);
-  // background-color: rgb(119, 141, 169);
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, rgb(14, 20, 36) 0%, rgb(19, 25, 40) 50%, rgb(28, 37, 56) 100%);
   color: #fdfdfddd;
 
 }
 body,div,ul,nav,header,footer,a,li,label{
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
 }

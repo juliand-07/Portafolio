@@ -1,102 +1,246 @@
-.profile{
-    margin-top: 10px;
+.profile {
+    margin-top: 25px;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(135deg, rgb(14, 20, 36) 0%, rgb(19, 25, 40) 50%, rgb(28, 37, 56) 100%);
+    border-radius: 25px;
+    box-shadow: 0px 0px 25px 5px #676767;
     container-type: inline-size;
     container-name: profile;
 }
-.profile__wrapper{
+
+.profile__data--person {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.data__person--image {
+    display: flex;
+    max-width: 300px;
     justify-content: center;
-    background-color: rgba(13, 27, 45, 0.753);
-    max-width: 1400px;
-
-}
-.profile__img-cont{
-    max-height: 500px;
-    overflow: hidden;
-}
-.profile__img{
-    max-width: 100%;
-    width: 700px;
+    margin-bottom: 20px;  
 }
 
-.profile_data{
-    max-width: 700px;
+.person__image {
+    width: 100%;
+    max-width: 600px;
+    height: 250px;
+    border-radius: 100%;
+    box-shadow: 0 5px 10px 3px rgb(2, 141, 240);
+}
+
+.presentation {
+    text-align: center;
+    margin: 0px 10px 25px 10px;
+}
+
+h2,
+h3 {
+    color: rgb(2, 141, 240);
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.info__menu {
+    align-items: center;
+    align-content: center;
+    list-style: none;
+    margin-left: 15px;
+}
+
+.menu__items {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    font-size: 13px;
+    height: 35px;
+    align-items: center;
+    text-align: center;
+}
+
+.icons {
+    max-width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+a {
+    font-size: 13px;
+    text-decoration: none;
+    color: rgb(255, 255, 255)
+}
+
+.button__cont {
+    display: flex;
+    justify-content: center;
+}
+
+.cv__button {
+    width: 50%;
+    max-width: 200px;
+    height: auto;
     padding: 15px;
+    margin: 10px;
+    text-align: center;
+    background: transparent;
+    color: rgb(2, 141, 240);
+    border: 1px solid rgb(2, 141, 240);
 }
- 
-.profile__skills-cont h2{
+
+.cv__button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgb(255, 255, 255);
+    color: white;
+}
+
+.profile__data--skills,
+span {
     color: #fff;
 
 }
-.profile__skill{
+
+.profile__skill {
     list-style: none;
     display: flex;
-    margin:  10px;
     max-width: 700px;
     margin-left: 0;
     align-items: center;
 }
-.load-bar{
-    border: 2px solid #48e;
-    border-radius: 8px;
-    color:#fff;
-    padding: 2px;
+
+.profile__skill-name {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
     font-size: 12px;
-    width: 80%;
+    width: 30%;
+}
+
+.skills__languaje {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.languaje {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    margin-left: 5px;
+}
+
+
+h2 {
+    margin: 20px;
+    color: 2, 141, 240;
+}
+
+.load-bar {
+    border: 2px solid rgba(2, 141, 240, 0.726);
+    border-radius: 8px;
+    color: #fff;
+    padding: 1px;
+    font-size: 12px;
+    width: 65%;
     margin: 2px;
     margin-left: 0;
 }
 
-.load-bar__bar{
-    background-color: #48e;
+.load-bar__bar {
+    background-color: rgb(2, 141, 240);
     border-radius: 4px;
-    padding: 4px 4px;
+    padding: 2px 2px;
 }
 
-.bar--60{
-    width: 60%;
+.bar--80 {
+    width: 80%;
 }
 
-.bar--50{
-    width: 50%;
+.bar--100 {
+    width: 100%;
 }
 
-/* -------- PROFILE QUERIES -------- */
-@container profile (min-width:720px){
-    .profile__wrapper{
+.bar--70 {
+    width: 70%;
+}
+
+
+// /* -------- PROFILE QUERIES -------- */
+@container profile (min-width:965px) {
+    .profile__data--person {
+        display: flex;
         flex-direction: row;
-        padding: 20px;
-        background-color: transparent;
-        align-items: normal;
-        margin: auto;
-    }
-    h1{
-        margin-top: 1;
-        font-size: 2rem;
-        text-wrap: balance;
     }
 
-    .profile_data{
-        background-color: rgba(13, 27, 45, 0.753);
-        border-radius: 0px  25px 25px  0px;
+    .data__person--image {
+        width: 30%;
+        margin: 20px 50px 0px 50px;
     }
 
-    .profile__description{
-        max-width: 600px;
-
+    .person__image {
+        width: 100%;
+        height: 250px;
     }
 
-    .profile__img-cont{
-        max-height: max-content;
+    .data__person--info {
+        width: 100%;
+        font-size: 20px;
     }
-    .profile__img{
-        height: 100%;
-        border-radius: 25px 0px 0px 25px;
-        object-fit: cover;
-        width: 550px;
-        background-color: #fff;
+
+    .presentation {
+        text-align: left;
+        margin: 50px 10px 25px 10px;
     }
-    
+
+    .profile__data--skills {
+        display: flex;
+        flex-direction: row;
+
+    }
+    .info__menu--cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+    }
+
+    .info__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .info__menu--list {
+        width: 75%;
+    }
+
+    .button__cont {
+        width: 75%;
+    }
+
+    .profile__person--skills {
+        width: 80%;
+    }
+
+    .data__items {
+        font-size: 15px;
+    }
+
+    .profile__skill-name {
+        width: 25%;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
 }

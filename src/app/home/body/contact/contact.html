@@ -1,39 +1,41 @@
 <section class="contact" id="contact">
-    <h2 class="title__Contact">Informacion de Contacto</h2>
+    <h2 class="title__Contact">Contactos</h2>
     <div class="form__cont">
-        <form class="form">
-            <div class="form__input-cont">
-                <label>Nombre
-                    <input type="text" disabled="false" placeholder="Julian David Murcia">
-                </label>
+        <div class="cont__form__data">
+            <div class="data">
+                <div class="logo__container">
+                    <img class="logo__send" src="https://img.icons8.com/water-color/50/paper-plane.png" alt="">
+                </div>
+                <div>
+                    <h3>Contactame</h3>
+                    <span>Estoy disponible para nuevas oportunidades y proyectos</span>
+                </div>
             </div>
+        </div>
+        <form #contactForm class="form" autocomplete="off" (submit)="sendEmail(contactForm)">
+
             <div class="form__input-cont">
-                <label>E-mail
-                    <input type="text" disabled="false" placeholder="juliand_murcia@outlook.com">
-                </label>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Escribe tu nombre">
             </div>
+
             <div class="form__input-cont">
-                <label>N° Telefono
-                    <input type="text" disabled="false" placeholder="3106396806">
-                </label>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
             </div>
+
             <div class="form__input-cont">
-                <label class="label__linkeding">Perfil Linkedin
-                    <a href="https://www.linkedin.com/in/julian-david-murcia-yomayuza-122222346/">
-                        <div class="img__cont">
-                            <img src="/image/linkedin.png" class="linkedin">
-                        </div>
-                    </a>
-                </label>
+                <label for="subject">Asunto</label>
+                <input type="text" id="subject" name="subject" placeholder="Escribe el asunto">
             </div>
-            <div class="form__input-cont">
-                <label class="label__github">Perfil GitHub
-                    <a href="https://github.com/juliand-07">
-                        <div class="img__cont">
-                            <img src="/image/github.png" class="github">
-                        </div>
-                    </a>
-                </label>
+
+             <div class="form__input-cont">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" placeholder="Escribe tu mensaje aqui..." ></textarea>
+            </div>
+
+            <div class="button__cont">
+                <button class="send__button" type="submit">Enviar</button>
             </div>
         </form>
     </div>

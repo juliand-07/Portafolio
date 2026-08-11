@@ -1,0 +1,43 @@
+.aboutMe{
+    font-size: 20px;
+    container-type: inline-size;
+    container-name: aboutme;
+}
+
+.title{
+    padding: 0px 20px 5px 0px;
+    text-align: right;
+    font-size: 35px;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.image{
+    width: 80%;
+    max-width: 600px;
+    height: 400px;
+}
+
+.about__messange{
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(135deg, rgb(0, 0, 0) 0%, rgb(32, 41, 59) 50%, rgb(32, 41, 59) 100%);
+    align-items: center;
+    border-radius: 20px;
+}
+
+.aboutMe__cont{
+    width: 90%;
+}
+
+h2 span{
+    color: rgb(2, 141, 240);
+}
+
+
+@container aboutme (min-width: 600px){
+    .about__messange{
+        flex-direction: row;
+
+    }
+}

@@ -1,59 +1,112 @@
 <section class="profile" id="profile">
     <div class="profile__wrapper">
-        <div class="profile__img-cont">
-            <img class="profile__img" src="image/fotos.jpeg">
-        </div>
-        <div class="profile_data">
-            <div class="profile__description">
-                <h1>Julian David Murcia </h1>
-                <p>
-                    Soy Julian, desarrollador web junior soy una persona responsable, amable,   
-                    con enfoque al crecimiento tanto profesional como personal soy una persona 
-                    curiosa y me gusta aprender e investigar nuevas cosas en mi profesión me gusta la música
-                    y buscar ambientes que me generen paz, tengo conocimientos en desarrollo web
-                    con el uso de html, css y javascript retroalimientando mis conocimientos con el uso de angular
-                    para el desarrollo frontend mediante el uso de observables, servicios el manejo de formularios
-                    reactivos y las conexiones con el backend, de igual manera el manejo de typescript  y un poco de java
-                    para manejos de backend usando sus respectivos frameworks(nest js y spring boot).
-                </p>
+        <div class="fond"></div>
+        <div class="profile__data--person">
+            <div class="data__person--image">
+                <img class="person__image" src="image/foto.png" alt="">
             </div>
-            <div class="profile__skills-cont">
-                <h2>SKILLS</h2>
-                <ul >
+            <div class="data__person--info">
+                <div class="presentation">
+                    <h3>¡Hola! Soy</h3>
+                    <h1>Julian David Murcia</h1>
+                    <h3>Desarrollador web Junior</h3>
+                    <p>
+                        Desarrollador de software junior responsable y comprometido con el aprendizaje continuo. Cuento con
+                        conocimientos en HTML, CSS, JavaScript
+                        y Angular para desarrollo frontend, utilizando TypeScript, observables, servicios, formularios
+                        reactivos e integración con APIs.
+                        Además, poseo conocimientos básicos en backend con Java, NestJS y Spring Boot.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="profile__data--skills">
+            <div class="info__menu--cont">
+                <div class="info__menu">
+                    <ul class="info__menu">
+                        <li class="menu__items">
+                            <img class="icons" src="https://img.icons8.com/ultraviolet/40/marker.png" alt="">
+                            <p class="data__items">Bogotá, Distrito Capital</p>
+                        </li>
+                        <li class="menu__items">
+                            <img class="icons" src="https://img.icons8.com/ultraviolet/40/new-post.png" alt="">
+                            <p class="data__items">juliand_murcia@outlook.com</p>
+                        </li>
+                        <li class="menu__items">
+                            <img class="icons" src="https://img.icons8.com/color/48/github--v1.png" alt="">
+                            <a href="https://github.com/juliand-07" target="_blank" rel="noopener noreferrer"
+                                class="data__items">https://github.com/juliand-07</a>
+                        </li>
+                        <li class="menu__items">
+                            <img class="icons" src="https://img.icons8.com/color/48/linkedin.png" alt="">
+                            <a class="data__items" href="https://www.linkedin.com/in/juliandmurcia/" target="_blank"
+                                rel="noopener noreferrer">
+                                linkedin.com/in/juliandmurcia
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="button__cont">
+                    <button class="cv__button" (click)="downloadCv()">Descargar CV</button>
+                </div>
+            </div>
+            <div class="profile__person--skills">
+                
+                <h2><span> <\> </span>SKILLS</h2>
+                <ul>
                     <li class="profile__skill">
+                        <span class="profile__skill-name"><img width="35" height="35"
+                                src="https://img.icons8.com/color/48/spring-logo.png" alt="">SPRING BOOT</span>
                         <div class="load-bar">
-                            <div class="load-bar__bar bar--50">
-                                50%
-                            </div>
+                            <div class="load-bar__bar bar--80">80%</div>
                         </div>
-                        <span class="profile__skill-name">SPRING-BOOT</span>
                     </li>
                     <li class="profile__skill">
+                        <span class="profile__skill-name"><img width="35" height="35"
+                                src="https://img.icons8.com/fluency/48/angularjs.png" alt="">ANGULAR</span>
                         <div class="load-bar">
-                            <div class="load-bar__bar bar--60">
-                                60%
-                            </div>
+                            <div class="load-bar__bar bar--100">100%</div>
                         </div>
-                        <span class="profile__skill-name">ANGULAR</span>
                     </li>
                     <li class="profile__skill">
+                        <span class="profile__skill-name"><img width="35" height="35"
+                                src="https://img.icons8.com/color/48/nestjs.png" alt="">NEST.JS</span>
                         <div class="load-bar">
-                            <div class="load-bar__bar bar--60">
-                                60%
-                            </div>
+                            <div class="load-bar__bar bar--100">100%</div>
                         </div>
-                        <span class="profile__skill-name">NEST.JS</span>
                     </li>
                     <li class="profile__skill">
+                        <span class="profile__skill-name"><img width="35" height="35"
+                                src="https://img.icons8.com/color/48/docker.png" alt="">DOCKER</span>
                         <div class="load-bar">
-                            <div class="load-bar__bar bar--50">
-                                50%
-                            </div>
+                            <div class="load-bar__bar bar--70">70%</div>
                         </div>
-                        <span class="profile__skill-name">DOCKER</span>
+                    </li>
+                </ul>
+                <ul class="skills__languaje">
+                    <li class="languaje">
+                        <img width="26px" src="https://img.icons8.com/color/48/html-5--v1.png" alt="">
+                        <p>HTML</p>
+                    </li>
+                    <li class="languaje">
+                        <img width="26px" src="https://img.icons8.com/color/48/css3.png" alt="">
+                        <p>CSS</p>
+                    </li>
+                    <li class="languaje">
+                        <img width="26px" src="https://img.icons8.com/color/48/javascript--v1.png" alt="">
+                        <p>JavaScript</p>
+                    </li>
+                    <li class="languaje">
+                        <img width="26px" src="https://img.icons8.com/color/48/typescript.png" alt="">
+                        <p>TypeScript</p>
+                    </li>
+                    <li class="languaje">
+                        <img width="26px" src="https://img.icons8.com/fluency/48/node-js.png" alt="">
+                        <p>Node.js</p>
                     </li>
                 </ul>
             </div>
+
         </div>
     </div>
 </section>

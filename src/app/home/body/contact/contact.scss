@@ -1,94 +1,160 @@
 .contact {
-    display: flex;
-    flex-direction: column;
-    min-height: 40vh;
-    padding: 4px;
+    margin: 15px;
     container-type: inline-size;
     container-name: contact;
+}
+
+.form__cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    background: linear-gradient(rgba(31, 55, 86, 0.271) 30%, rgba(0, 0, 0, 0.425));
+}
+
+.cont__form__data {
+    width: 100%;
 }
 
 .title__Contact {
     padding: 0px 0px 5px 10px;
     text-align: start;
-    font-size: 33px;
-    border-bottom: 2px solid black;
-    color: #000;
+    font-size: 35px;
+    border-bottom: 2px solid #fff;
+    color: #fff;
 }
 
-label {
-    margin-left: 6px;
-    font-size: 20px;
+.logo__container {
+    margin: 0px 15px 30px;
 }
 
- .form__cont {
-        align-content: center;
-        padding: 10px;
-    }
+.data {
+    display: flex;
+    border-bottom: 2px solid #3b82f6;
+}
+
 .form {
-    display: grid;
-    margin: auto;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "name name"
-        "email email"
-        "contact contact"
-        "linkedin github";
-    padding: 15px;
-    max-width: 600px;
     width: 100%;
-    background-color: rgba(13, 27, 45, 0.932);
+    max-width: 600px;
+    padding: 20px;
+    margin: 20px;
     border-radius: 15px;
-    box-shadow: 0px 0px 5px 0px #000;
+    box-shadow: 0px 0px 20px 0px rgba(2, 141, 240, 0.219);
 }
 
-
-
-.form__input-cont:nth-child(1) {
-    grid-area: name;
-}
-
-.form__input-cont:nth-child(2) {
-    grid-area: email;
-}
-
-.form__input-cont:nth-child(3) {
-    grid-area: contact;
-}
-
-.form__input-cont:nth-child(4) {
+.form__input-cont {
     display: flex;
-    justify-content: center;
-    grid-area: linkedin;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
 }
 
-.form__input-cont:nth-child(5) {
-    display: flex;
-    justify-content: center;
-    grid-area: github;
+.form__input-cont label {
+    color: #bacee5;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.form__input-cont input,
+.form__input-cont textarea {
+    width: 100%;
+    max-height: 200px;
+    padding: 12px 16px;
+    background-color: #0b1329;
+    border: 1px solid #1e293b;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+.form__input-cont input::placeholder,
+.form__input-cont textarea::placeholder {
+    color: #64748b;
+}
+
+.form__input-cont input:focus,
+.form__input-cont textarea:focus {
+    caret-color: #ffffff;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
 }
 
 
-.form__input-cont input {
-    width: 90%;
-    border: 1px solid #fff;
-    background-color: transparent;
-    font-size: 20px;
+.form__input-cont textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.cont__form__data {
     padding: 10px;
-    border-radius: 5px;
-    margin: 10px 10px;
 }
 
-input::placeholder{
-    color: rgb(224, 225, 221);
-}
-.img__cont {
+.button__cont {
     display: flex;
     justify-content: center;
+    margin: 20px;
 }
 
-.linkedin,.github {
-    width: 60px;
-    height: 60px;
-    margin: 10px 0px 10px 0px;
-    border-radius: 50%;
+.send__button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: rgb(2, 141, 240);
+    border: 1px solid rgb(2, 141, 240);
+    font-size: 20px;
+}
+
+.send__button:hover{
+    border-color: #fff;
+    color: #fff;
+}
+h3 {
+    font-size: 30px;
+}
+
+span {
+    font-size: 14px;
+}
+
+h3,
+span {
+    margin: 0;
+}
+
+// /* -------- PROFILE QUERIES -------- */
+@container contact (min-width:600px) {
+    .form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "name email"
+            "assent assent"
+            "mensaje mensaje"
+            "button button";
+        gap: 20px;
+    }
+
+    .form__input-cont:nth-child(1) {
+        grid-area: name;
+    }
+
+    .form__input-cont:nth-child(2) {
+        grid-area: email;
+    }
+
+    .form__input-cont:nth-child(3) {
+        grid-area: assent;
+    }
+
+    .form__input-cont:nth-child(4) {
+        grid-area: mensaje;
+    }
+
+    .button__cont{
+        grid-area: button;
+    }
 }

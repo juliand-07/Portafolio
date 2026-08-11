@@ -1,6 +1,6 @@
-*{
+* {
     font-size: 40px;
-    color:#fff;
+    color: #fff;
 }
 
 .proyects {
@@ -10,21 +10,6 @@
     margin-top: 0;
     container-type: inline-size;
     container-name: proyects;
-}
-
-.back{
-    border: none;
-    background-color: rgba(27, 38, 59);
-    opacity: 0.7;
-    font-size:30px;
-    width: 90px;
-    height: 40px;
-    border-radius: 8px;
-    cursor: pointer;
-}
-.back:hover{
-    opacity: 1;
-    box-shadow: 0px 0px 10px 0px rgb(27, 38, 59);
 }
 
 .proyects__wrapper {
@@ -37,63 +22,42 @@
     color: #000;
 }
 
-
-
-.proyects__proyects-container {
+.proyects__nav{
     display: flex;
-    flex-direction: column;
-    padding: 4px;
-    margin: 0;
-    width: 100%;
+    text-align: center;
+    width: 99%;
+    height: auto;
+    margin-left: 1px;
+    
 }
 
-.proyect__cont {
-    display: grid;
-    place-content: center;
-    margin-top: 20px;
-    height: 500px;
-    width: 100%;
-    border-radius: 20px;
-    cursor: pointer;
+// .proyects__container{
+//     height: 100%;
+//     max-height: 600px;
+//     background-color: red;
+// }
+
+.nav{
+    display: inline-block;
+    width: auto;
+    background-color: gray;
+    padding: 10px;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;  
+    transition: transform 0.3s ease;
+}
+
+.nav:hover{
+    transform: scale(1.1);
 }
 
 h2 {
     padding: 0px 0px 10px 20px;
     text-align: start;
     font-size: 35px;
-    border-bottom: 3px solid black;
-    color: #000;
-}
-.proyect__cont:hover{
-    border :1px #070707 solid;
-    opacity:0.9;
-}
-
-.proyect__cont:nth-child(1){
-    background-image: linear-gradient(#0007,#0006), url("image/angular.jpg");
-    background-position: center;
-    background-size: cover;
-}
-.proyect__cont:nth-child(2){
-    background-image: linear-gradient(#0006,#0005), url("image/nestjs.jpg");
-    background-position: center;
-    background-size: cover;
-}
-.proyect__cont:nth-child(3){
-    background-image: linear-gradient(#0006,#0005), url("image/spring.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
-@container proyects (min-width:900px) {
-    
-    .proyects__proyects-container{
-        flex-direction: row;
-        justify-content: space-around;
-
-    }
-    .proyect__cont{
-        margin: 2px;
-    }
-
+    border-bottom: 3px solid #fff;
+    color: #fff;
 }

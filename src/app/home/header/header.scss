@@ -1,16 +1,16 @@
-.header{
+.header {
     display: flex;
-    background-color: rgb(27, 38, 59);
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 0px 10px 0px rgb(27, 38, 59);
     container-type: inline-size;
     container-name: header;
-    position: relative;
+    position: sticky;
+    top: 0px;
     z-index: 10;
 }
 
-.header_open-nav-button{
+.header_open-nav-button {
     color: rgb(255, 255, 255);
     font-size: 3rem;
     font-weight: 600;
@@ -19,20 +19,23 @@
 }
 
 
-.header_checkbox{
+.header_checkbox {
     display: none;
 }
 
-.header__nav{
+.header__nav {
     display: none;
-    background-color: rgb(27, 38, 59);
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     position: absolute;
     height: 100vh;
     width: 100%;
     top: 0;
     z-index: -1;
 }
-.header__nav-list{
+
+.header__nav-list {
     display: flex;
     flex-direction: column;
     height: 40vh;
@@ -40,34 +43,35 @@
     justify-content: space-evenly;
 }
 
-.header_checkbox:checked ~ .header__nav{
+.header_checkbox:checked~.header__nav {
     display: flex;
-  
+
 }
-.header__logo{
+
+.header__logo {
     max-width: 100%;
     width: 55px;
     margin: 10px 20px;
     border-radius: 50%;
 }
 
-.header__nav-item{
+.header__nav-item {
     list-style: none;
 }
 
-.header__nav-item a{
+.header__nav-item a {
     color: rgb(246, 246, 246);
 }
 
-.header__nav-item a:not(:is(:hover,:active)){
+.header__nav-item a:not(:is(:hover, :active)) {
     text-decoration: none;
 }
 
 
 /* ----- HEADER QUERIES ------*/
 
-@container header (min-width:600px){
-    .header__nav{
+@container header (min-width:600px) {
+    .header__nav {
         display: block;
         position: static;
         height: auto;
@@ -75,14 +79,16 @@
         justify-content: space-between;
         z-index: 0;
     }
-    .header__nav-list{
+
+    .header__nav-list {
         flex-direction: row;
         height: auto;
         width: auto;
         gap: 20px;
         padding: 20px;
     }
-    .header_open-nav-button{
+
+    .header_open-nav-button {
         display: none;
     }
 

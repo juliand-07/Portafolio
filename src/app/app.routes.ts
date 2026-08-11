@@ -20,6 +20,10 @@ export const routes: Routes = [
             {
                 path:'spring',
                 component: SpringBoot
+            },
+            {
+                path: '**',
+                redirectTo: 'deskary'
             }
         ]
 
