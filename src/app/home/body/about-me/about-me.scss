@@ -13,8 +13,9 @@
 }
 
 .image{
-    width: 80%;
-    max-width: 600px;
+    border-radius: 100%;
+    width: 100%;
+    max-width: 500px;
     height: 400px;
 }
 
@@ -39,5 +40,9 @@ h2 span{
     .about__messange{
         flex-direction: row;
 
+    }
+    .image{
+    margin-right: 20px;
+    width: 40%;
     }
 }
